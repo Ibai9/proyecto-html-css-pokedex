@@ -1,0 +1,137 @@
+body {
+    background-color: whitesmoke;
+}
+
+nav {
+    display: flex;
+    justify-content: flex-start;
+    margin: 1rem; 
+    margin-left: 10rem; 
+    margin-right: 10rem; 
+}
+
+nav img {
+    width: 10rem;
+    height: 3rem;
+}
+
+main {
+    background-image: linear-gradient(to bottom, #c089ff, transparent);
+    background-size: 100% 1rem;
+    background-repeat: no-repeat;
+    padding-top: 2rem;
+}
+
+
+
+.buscador {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 1rem;
+}
+
+.buscador input {
+    background-color:rgba(211, 211, 211, 0.5);
+    border-radius: 0.25rem;
+    border: 1px solid lightgray;
+    width: 30%;
+    height: 2rem;
+    margin-top: 1rem;
+}
+
+main article {
+    margin: 2rem;
+}
+
+.tipo_hierva {
+    background-color: lightgreen;
+}
+
+article{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    border-radius: 0.5rem;
+}
+
+article .info_general{
+    display: flex;
+    justify-content: space-between;
+}
+
+article .info_general:first-child{
+    margin-left: 1rem;
+}
+
+article .info_general:last-child{
+    margin: 1rem;
+}
+
+article .imagen_pokemon {
+    position: relative;
+    /* z-index: 2; */
+    display: flex;
+    justify-content: center;
+    margin-bottom: -10rem;
+    /* align-items: center; */
+}
+
+article .imagen_pokemon > *{
+    height: 25rem;
+    width: 25rem;
+}
+
+article .informacion {
+    background-color: white;
+    margin: 1rem;
+    padding-top: 10rem;
+    border-radius: 0.5rem;
+}
+
+article .tipo {
+    display: flex;
+    justify-content: center;
+}
+
+article .tipo > *{
+    align-items: center;
+    height: 7rem;
+    width: 7rem;
+}
+
+article .peso_altura {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+article .peso_altura > img{
+    height: 5rem;
+    width: 5rem;
+}
+
+article .estadisticas {
+    display: flex;
+    flex-direction: column;
+}
+
+article .estadisticas span {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 1rem;
+    margin-left: 1rem;
+}
+
+article .estadisticas span progress{
+    width: 100%;
+    margin-right: 1rem;
+}
+
+footer {
+    background-color: black;
+    color: white;
+    padding: 1rem;
+    text-align: center;
+}
