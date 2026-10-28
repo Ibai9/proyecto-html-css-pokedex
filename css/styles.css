@@ -7,7 +7,7 @@ body {
 }
 
 nav {
-    margin: 1rem;
+    margin: 1rem 0;
 }
 
 nav a{
@@ -25,6 +25,10 @@ nav img {
     height: auto;
 }
 
+
+/* Preguntar/Mirar esto, lo que hace es en todo lo alto del main dividir cada 1rem el shadow
+y luego solo coje el primero con el no-repeat.   */
+
 main {
     background-image: linear-gradient(to bottom, #c089ff, transparent);
     background-size: 100% 1rem;
@@ -33,13 +37,16 @@ main {
 }
 
 .main_main {
-    display: grid;
+    /* display: grid; */
+    margin: 2rem 0;
 }
+
+/* Buscador la parte de relative para luego meter el icono de la lupa dentro del buscador */
 
 .buscador {
     position: relative;
     display: flex;
-    margin: 2rem;
+    margin: 2rem 0;
     justify-content: flex-start;
     padding-bottom: 1rem;
 }
@@ -62,9 +69,9 @@ main {
     margin-left: 1rem;
 }
 
-main article {
+/* main article {
     margin: 2rem;
-}
+} */
 
 .tipo_hierva {
     background-color: lightgreen;
@@ -196,6 +203,8 @@ article .estadisticas span progress {
     background: transparent;
 }
 
+/* Pregunta, esto de la barra para el fondo y el color de la barra hay que poner si o si asi? */
+
 article .estadisticas span progress::-webkit-progress-bar {
     background-color: #e0e0e0;
     border-radius: 0.5rem;
@@ -218,7 +227,7 @@ footer {
     text-align: center;
 }
 
-@media(min-width: 1240px) {
+/* @media(min-width: 1240px) {
     .main_main {
         grid-template-columns: repeat(2, 1fr);
     }
@@ -232,9 +241,9 @@ footer {
         margin-left: 7rem;
         margin-right: 7rem;
     }
-}
+} */
 
-@media(min-width: 1870px) {
+/* @media(min-width: 1870px) {
     .main_main {
         grid-template-columns: repeat(3, 1fr);
     }
@@ -248,4 +257,4 @@ footer {
         margin-left: 14rem;
         margin-right: 14rem;
     }
-}
+} */
