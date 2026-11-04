@@ -6,14 +6,15 @@ body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
+/* encima del pokedex y la imagen de pokedex con esto dejo un espacio arriba y abajo */
 nav {
     margin: 1rem 0;
 }
 
 nav a{
     display: flex;
-    align-items: center;
-    justify-content: flex-start;
+    /* align-items: center; */
+    /* justify-content: flex-start; */
     text-decoration: none;
     color: black;
     font-size: 1.5rem;
@@ -25,9 +26,17 @@ nav img {
     height: auto;
 }
 
+/* para alinear con la imagen de la pokemon con el texto que pone Pokédex */
+nav p {
+    margin-top: 1rem;
+}
+
 
 /* Preguntar/Mirar esto, lo que hace es en todo lo alto del main dividir cada 1rem el shadow
 y luego solo coje el primero con el no-repeat.   */
+
+/* en todo el 100% del reparte el gradiente 1rem y con el no-repeat solo coje el primero. Con el
+padding top deja un espacio para que haya un espacio con el buscador */
 
 main {
     background-image: linear-gradient(to bottom, #c089ff, transparent);
@@ -36,35 +45,39 @@ main {
     padding-top: 2rem;
 }
 
+/* deja espacio vertical por el buscador, para que este tenga espacio */
 .main_main {
     /* display: grid; */
-    margin: 2rem 0;
+    margin: 1rem 0;
 }
 
 /* Buscador la parte de relative para luego meter el icono de la lupa dentro del buscador */
 
 .buscador {
     position: relative;
-    display: flex;
+    /* display: flex; */
+    /* justify-content: center; */
     margin: 2rem 0;
-    justify-content: flex-start;
     padding-bottom: 1rem;
 }
 
 .buscador input {
     background-color:rgba(211, 211, 211, 0.5);
     border-radius: 0.5rem;
-    border: 1px solid lightgray;
+    border: 1px solid rgb(78, 78, 78);
     width: 100%;
     height: 3rem;
     margin-top: 1rem;
     padding-left: 2.5rem;
 }
 
+/* esto y lo de arriba es para que el buscador este la imagen dentro del buscador, y con los padding
+y margin left se hace que el place holder de mueva a la izquierda y metes ahi la imagen de buscador */
+
 .buscador img {
     position: absolute;
     width: 1rem;
-    height: 1rem;
+    height: auto;
     margin-top: 2rem;
     margin-left: 1rem;
 }
@@ -74,33 +87,33 @@ main {
 } */
 
 .tipo_hierva {
-    background-color: lightgreen;
+    background-color: #63bc5c;
 }
 
 .tipo_fuego {
-    background-color: lightcoral;
+    background-color: #db4437;
 }
 
+/* para que la informacion/elementos que estan dentro del articulo esten ordenados en una columna */
 article{
     position: relative;
     display: flex;
     flex-direction: column;
     border-radius: 2rem;
+    overflow: hidden;
 }
 
+/* esto es la informacion de arriba tanto el nombre del pokemon como el numero ID que estaren divididos 
+cada uno en lado por eso el space-between */
 article .info_general{
     display: flex;
     justify-content: space-between;
+    margin: 1rem;
 }
 
 /* article .info_general:first-child{
     margin-left: 1rem;
 } */
-
-article .info_general{
-    margin: 1rem;
-    margin-top: 0;
-}
 
 article .info_general h2{
     color: white;
@@ -116,36 +129,68 @@ article .info_general p{
 
 article .imagen_pokemon {
     position: relative;
-    /* z-index: 2; */
-    display: flex;
-    justify-content: center;
-    margin-bottom: -10rem;
-    /* align-items: center; */
+    align-self: center;
+    height: 15rem;
+    width: auto;
+    max-width: 100%;
+    margin-bottom: -6rem;
 }
 
-article .imagen_pokemon > *{
-    height: 25rem;
-    width: 25rem;
-}
-
+/* esto es para el cuadrado donde va la informacion del pokemon tanto peso, altura... el fondo blanco */
 article .informacion {
     background-color: white;
     margin: 1rem;
-    padding-top: 10rem;
+    padding-top: 6rem;
     border-radius: 2rem;
 }
 
+/* esto es para las imagenes que estan de tipo de pokemons esten separados y centraus */
 article .tipo {
     display: flex;
     justify-content: center;
-    gap: 2rem;
+    gap: 0.5rem;
 }
 
-article .tipo > *{
+article .tipo div{
     align-items: center;
-    height: 7rem;
-    width: 7rem;
+    height: 1.3rem;
+    width: auto;
+    overflow: hidden;
+    display: flex;
+    padding: 1rem;
+    border-radius: 1rem;
 }
+
+article .tipo .caja_de_grass{
+    background-color: #63bc5c;
+}
+
+article .tipo .caja_de_poison{
+    background-color: #b567ce;
+}
+
+article .tipo .caja_de_fire{
+    background-color: #db4437;
+}
+
+article .tipo .caja_de_flying{
+    background-color: #90a9de;
+}
+
+article .tipo img{
+    width: 1rem;
+    height: auto;
+}
+
+article .tipo p{
+    color: white;
+    margin-top: 0.9rem;
+}
+
+/* article .tipo .caja_de_poison p{
+    background-color: black;
+} */
+
 
 article .peso_altura {
     display: flex;
@@ -155,13 +200,16 @@ article .peso_altura {
 }
 
 article .peso_altura > img{
-    height: 5rem;
-    width: 5rem;
+    height: 2rem;
+    width: auto;
+    overflow: hidden;
 }
 
 article .peso_altura .datos_peso_altura {
     font-size: 1.5rem;
     font-weight: bold;
+    margin-top: 1rem;
+    margin-left: 0.5rem;
 }
 
 article .peso_altura .barra_separacion_peso_altura {
@@ -192,6 +240,7 @@ article .estadisticas span label {
 article .estadisticas span p {
     color: gray;
     font-size: 1.5rem;
+    margin-top: 1rem;
 }
 
 article .estadisticas span progress {

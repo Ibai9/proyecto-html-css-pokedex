@@ -13,26 +13,26 @@
     <body>
 
         <header>
-            <div class="container">
-                <nav>
-                    <a href="pagina_pokedex.html">
-                        <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxZW0iIGhlaWdodD0iMWVtIiB2aWV3Qm94PSIwIDAgMjQgMjQiPgoJPHBhdGggZD0iTTAgMGgyNHYyNEgweiIgZmlsbD0ibm9uZSIgLz4KCTxwYXRoIGZpbGw9ImN1cnJlbnRDb2xvciIgZmlsbC1ydWxlPSJldmVub2RkIiBkPSJNMyAxMmE5IDkgMCAxIDEgMTggMGE5IDkgMCAwIDEtMTggMG0yLjA3IDFhNy4wMDIgNy4wMDIgMCAwIDAgMTMuODYgMGgtNC4xYTMuMDAxIDMuMDAxIDAgMCAxLTUuNjYgMHptMTMuODYtMmE3LjAwMSA3LjAwMSAwIDAgMC0xMy44NiAwaDQuMWEzLjAwMSAzLjAwMSAwIDAgMSA1LjY2IDB6TTEyIDEzYTEgMSAwIDEgMCAwLTJhMSAxIDAgMCAwIDAgMiIgY2xpcC1ydWxlPSJldmVub2RkIiAvPgo8L3N2Zz4K" alt="logo"/>
-                        <p>Pokédex</p>
-                    </a>
-                </nav>
-            </div>
+            <nav class="container">
+                <a href="pagina_pokedex.html">
+                    <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxZW0iIGhlaWdodD0iMWVtIiB2aWV3Qm94PSIwIDAgMjQgMjQiPgoJPHBhdGggZD0iTTAgMGgyNHYyNEgweiIgZmlsbD0ibm9uZSIgLz4KCTxwYXRoIGZpbGw9ImN1cnJlbnRDb2xvciIgZmlsbC1ydWxlPSJldmVub2RkIiBkPSJNMyAxMmE5IDkgMCAxIDEgMTggMGE5IDkgMCAwIDEtMTggMG0yLjA3IDFhNy4wMDIgNy4wMDIgMCAwIDAgMTMuODYgMGgtNC4xYTMuMDAxIDMuMDAxIDAgMCAxLTUuNjYgMHptMTMuODYtMmE3LjAwMSA3LjAwMSAwIDAgMC0xMy44NiAwaDQuMWEzLjAwMSAzLjAwMSAwIDAgMSA1LjY2IDB6TTEyIDEzYTEgMSAwIDEgMCAwLTJhMSAxIDAgMCAwIDAgMiIgY2xpcC1ydWxlPSJldmVub2RkIiAvPgo8L3N2Zz4K" alt="logo"/>
+                    <p>Pokédex</p>
+                </a>
+            </nav>
         </header>
     
         <main>
 
-            <div class="container px-lg-5">
-                <div class="buscador">
-                    <a href="pagina_pokedex.html"><img src="https://cdn-icons-png.flaticon.com/256/107/107122.png" alt="icono_buscar" class="icono_lupa"/></a>
-                    <input type="text" placeholder="Search a Pokémon..."/>
-                </div>
-            </div>
-
             <div class="container">
+                <div class="row justify-content-center">
+                    <div class="buscador col-lg-6">
+                        <a href="pagina_pokedex.html">
+                            <img src="https://cdn-icons-png.flaticon.com/256/107/107122.png" alt="icono_buscar" class="icono_lupa"/>
+                        </a>
+                        <input type="text" placeholder="Search a Pokémon..."/>
+                    </div>
+                </div>
+            
                 <section class="main_main row g-4">
                     <div class="col-12 col-md-6 col-lg-4">
                         <article id="bulbasaur" class="tipo_hierva">
@@ -40,14 +40,21 @@
                                 <h2>Bulbasaur</h2>
                                 <p>#001</p>
                             </div>
-                            <div class="imagen_pokemon">
-                                <img src="https://images.wikidexcdn.net/mwuploads/wikidex/4/43/latest/20190406170624/Bulbasaur.png" alt="imagen_bulbasaur"/>
-                            </div>
+
+                            <img src="https://images.wikidexcdn.net/mwuploads/wikidex/4/43/latest/20190406170624/Bulbasaur.png" class="imagen_pokemon" alt="imagen_bulbasaur"/>
                             
                             <section class="informacion">
                                 <div class="tipo">
-                                    <img src="https://static.wikia.nocookie.net/pokemonfanon/images/3/35/Gen8-Grass.png/revision/latest/smart/width/250/height/250?cb=20201110231712" alt="icono_grass"/>
-                                    <img src="https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c4/Pok%C3%A9mon_Poison_Type_Icon.svg/3840px-Pok%C3%A9mon_Poison_Type_Icon.svg.png?utm_source=es.wikipedia.org&utm_campaign=index&utm_content=thumbnail" alt="icono_poison"/>
+                                    <div class="caja_de_grass">
+                                        <img src="https://static.wikia.nocookie.net/pokemonfanon/images/3/35/Gen8-Grass.png/revision/latest/smart/width/250/height/250?cb=20201110231712" alt="logo grass"/>
+                                        <p>Grass</p>
+                                    </div>
+                                    <div class="caja_de_poison">
+                                        <img src="https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c4/Pok%C3%A9mon_Poison_Type_Icon.svg/3840px-Pok%C3%A9mon_Poison_Type_Icon.svg.png?utm_source=es.wikipedia.org&utm_campaign=index&utm_content=thumbnail" alt="logo poison"/>
+                                        <p>Poison</p>
+                                    </div>
+                                    <!-- <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/types/generation-ix/scarlet-violet/12.png" alt="icono_grass"/> -->
+                                    <!-- <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/types/generation-ix/scarlet-violet/4.png" alt="icono_poison"/>                                 -->
                                 </div>
                                 <div class="peso_altura">
                                     <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxZW0iIGhlaWdodD0iMWVtIiB2aWV3Qm94PSIwIDAgMjQgMjQiPgoJPHBhdGggZD0iTTAgMGgyNHYyNEgweiIgZmlsbD0ibm9uZSIgLz4KCTxnIGZpbGw9Im5vbmUiPgoJCTxwYXRoIGZpbGw9ImN1cnJlbnRDb2xvciIgZmlsbC1ydWxlPSJldmVub2RkIiBkPSJNMTUuNTggMi40MmMyLjgzIDAgNC4yNSAwIDUuMTIuODhjLjg4Ljg3Ljg4IDIuMjkuODggNS4xMnY3LjE2YzAgMi44MyAwIDQuMjUtLjg4IDUuMTJjLS44Ny44OC0yLjI5Ljg4LTUuMTIuODhIOC40MmMtMi44MyAwLTQuMjUgMC01LjEyLS44OGMtLjg4LS44Ny0uODgtMi4yOS0uODgtNS4xMlY4LjQyYzAtMi44MyAwLTQuMjUuODgtNS4xMmMuODctLjg4IDIuMjktLjg4IDUuMTItLjg4em0yLjU4IDQuM0wxNiAxMi4yNWwtMy45Ni0uN2wtNC4wNC43bC0yLjI0LTUuNTNsNi4yOC0xLjI0eiIgY2xpcC1ydWxlPSJldmVub2RkIiBvcGFjaXR5PSIuMiIgLz4KCQk8cmVjdCB3aWR0aD0iMTkuMTciIGhlaWdodD0iMTkuMTciIHN0cm9rZT0iY3VycmVudENvbG9yIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiIHN0cm9rZS13aWR0aD0iMS41IiByeD0iMyIgdHJhbnNmb3JtPSJyb3RhdGUoOTAgMCAyMS41OClzY2FsZSgtMSAxKSIgLz4KCQk8cGF0aCBzdHJva2U9ImN1cnJlbnRDb2xvciIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbGluZWpvaW49InJvdW5kIiBzdHJva2Utd2lkdGg9IjEuNSIgZD0iTTE0LjUzIDExLjljLjYzLjE2Ljk1LjI1IDEuMS4xOGMuMTctLjA3LjMtLjMuNTUtLjc4bDEuNC0yLjU3Yy4zOC0uNzIuNTctMS4wNy40Mi0xLjVzLS40OC0uNTUtMS4xMy0uODFBMTMgMTMgMCAwIDAgMTIgNS41NGMtMi4xNSAwLTMuNzguNDUtNC44Ni44OGMtLjY2LjI2LS45OS40LTEuMTQuODFjLS4xNS40My4wNS43OC40NCAxLjVsMS40IDIuNTdjLjI1LjQ3LjM4LjcuNTQuNzhjLjE2LjA2LjQ4LS4wMiAxLjEyLS4yYTEwIDEwIDAgMCAxIDIuNS0uMjhjMS4xMyAwIDEuOTYuMTQgMi41My4zbS45MyA1Ljk0SDguNTRtMi44My02LjI1bC0uNDItMy4xIiAvPgoJPC9nPgo8L3N2Zz4K" alt="icono_weight"/>
@@ -104,14 +111,21 @@
                                 <h2>Ivysaur</h2>
                                 <p>#002</p>
                             </div>
-                            <div class="imagen_pokemon">
-                                <img src="https://images.wikidexcdn.net/mwuploads/wikidex/thumb/8/86/latest/20190406151903/Ivysaur.png/300px-Ivysaur.png" alt="imagen_bulbasaur"/>
-                            </div>
+                            
+                            <img src="https://images.wikidexcdn.net/mwuploads/wikidex/thumb/8/86/latest/20190406151903/Ivysaur.png/300px-Ivysaur.png" class="imagen_pokemon" alt="imagen_bulbasaur"/>
                             
                             <section class="informacion">
                                 <div class="tipo">
-                                    <img src="https://static.wikia.nocookie.net/pokemonfanon/images/3/35/Gen8-Grass.png/revision/latest/smart/width/250/height/250?cb=20201110231712" alt="icono_grass"/>
-                                    <img src="https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c4/Pok%C3%A9mon_Poison_Type_Icon.svg/3840px-Pok%C3%A9mon_Poison_Type_Icon.svg.png?utm_source=es.wikipedia.org&utm_campaign=index&utm_content=thumbnail" alt="icono_poison"/>
+                                    <div class="caja_de_grass">
+                                        <img src="https://static.wikia.nocookie.net/pokemonfanon/images/3/35/Gen8-Grass.png/revision/latest/smart/width/250/height/250?cb=20201110231712" alt="logo grass"/>
+                                        <p>Grass</p>
+                                    </div>
+                                    <div class="caja_de_poison">
+                                        <img src="https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c4/Pok%C3%A9mon_Poison_Type_Icon.svg/3840px-Pok%C3%A9mon_Poison_Type_Icon.svg.png?utm_source=es.wikipedia.org&utm_campaign=index&utm_content=thumbnail" alt="logo poison"/>
+                                        <p>Poison</p>
+                                    </div>
+                                    <!-- <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/types/generation-ix/scarlet-violet/12.png" alt="icono_grass"/>
+                                    <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/types/generation-ix/scarlet-violet/4.png" alt="icono_poison"/> -->
                                 </div>
                                 <div class="peso_altura">
                                     <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxZW0iIGhlaWdodD0iMWVtIiB2aWV3Qm94PSIwIDAgMjQgMjQiPgoJPHBhdGggZD0iTTAgMGgyNHYyNEgweiIgZmlsbD0ibm9uZSIgLz4KCTxnIGZpbGw9Im5vbmUiPgoJCTxwYXRoIGZpbGw9ImN1cnJlbnRDb2xvciIgZmlsbC1ydWxlPSJldmVub2RkIiBkPSJNMTUuNTggMi40MmMyLjgzIDAgNC4yNSAwIDUuMTIuODhjLjg4Ljg3Ljg4IDIuMjkuODggNS4xMnY3LjE2YzAgMi44MyAwIDQuMjUtLjg4IDUuMTJjLS44Ny44OC0yLjI5Ljg4LTUuMTIuODhIOC40MmMtMi44MyAwLTQuMjUgMC01LjEyLS44OGMtLjg4LS44Ny0uODgtMi4yOS0uODgtNS4xMlY4LjQyYzAtMi44MyAwLTQuMjUuODgtNS4xMmMuODctLjg4IDIuMjktLjg4IDUuMTItLjg4em0yLjU4IDQuM0wxNiAxMi4yNWwtMy45Ni0uN2wtNC4wNC43bC0yLjI0LTUuNTNsNi4yOC0xLjI0eiIgY2xpcC1ydWxlPSJldmVub2RkIiBvcGFjaXR5PSIuMiIgLz4KCQk8cmVjdCB3aWR0aD0iMTkuMTciIGhlaWdodD0iMTkuMTciIHN0cm9rZT0iY3VycmVudENvbG9yIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiIHN0cm9rZS13aWR0aD0iMS41IiByeD0iMyIgdHJhbnNmb3JtPSJyb3RhdGUoOTAgMCAyMS41OClzY2FsZSgtMSAxKSIgLz4KCQk8cGF0aCBzdHJva2U9ImN1cnJlbnRDb2xvciIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbGluZWpvaW49InJvdW5kIiBzdHJva2Utd2lkdGg9IjEuNSIgZD0iTTE0LjUzIDExLjljLjYzLjE2Ljk1LjI1IDEuMS4xOGMuMTctLjA3LjMtLjMuNTUtLjc4bDEuNC0yLjU3Yy4zOC0uNzIuNTctMS4wNy40Mi0xLjVzLS40OC0uNTUtMS4xMy0uODFBMTMgMTMgMCAwIDAgMTIgNS41NGMtMi4xNSAwLTMuNzguNDUtNC44Ni44OGMtLjY2LjI2LS45OS40LTEuMTQuODFjLS4xNS40My4wNS43OC40NCAxLjVsMS40IDIuNTdjLjI1LjQ3LjM4LjcuNTQuNzhjLjE2LjA2LjQ4LS4wMiAxLjEyLS4yYTEwIDEwIDAgMCAxIDIuNS0uMjhjMS4xMyAwIDEuOTYuMTQgMi41My4zbS45MyA1Ljk0SDguNTRtMi44My02LjI1bC0uNDItMy4xIiAvPgoJPC9nPgo8L3N2Zz4K" alt="icono_weight"/>
@@ -168,14 +182,21 @@
                                 <h2>Venusaur</h2>
                                 <p>#003</p>
                             </div>
-                            <div class="imagen_pokemon">
-                                <img src="https://images.wikidexcdn.net/mwuploads/wikidex/thumb/b/be/latest/20160309230456/Venusaur.png/300px-Venusaur.png" alt="imagen_bulbasaur"/>
-                            </div>
+
+                            <img src="https://images.wikidexcdn.net/mwuploads/wikidex/thumb/b/be/latest/20160309230456/Venusaur.png/300px-Venusaur.png" class="imagen_pokemon" alt="imagen_bulbasaur"/>
                             
                             <section class="informacion">
                                 <div class="tipo">
-                                    <img src="https://static.wikia.nocookie.net/pokemonfanon/images/3/35/Gen8-Grass.png/revision/latest/smart/width/250/height/250?cb=20201110231712" alt="icono_grass"/>
-                                    <img src="https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c4/Pok%C3%A9mon_Poison_Type_Icon.svg/3840px-Pok%C3%A9mon_Poison_Type_Icon.svg.png?utm_source=es.wikipedia.org&utm_campaign=index&utm_content=thumbnail" alt="icono_poison"/>
+                                    <div class="caja_de_grass">
+                                        <img src="https://static.wikia.nocookie.net/pokemonfanon/images/3/35/Gen8-Grass.png/revision/latest/smart/width/250/height/250?cb=20201110231712" alt="logo grass"/>
+                                        <p>Grass</p>
+                                    </div>
+                                    <div class="caja_de_poison">
+                                        <img src="https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c4/Pok%C3%A9mon_Poison_Type_Icon.svg/3840px-Pok%C3%A9mon_Poison_Type_Icon.svg.png?utm_source=es.wikipedia.org&utm_campaign=index&utm_content=thumbnail" alt="logo poison"/>
+                                        <p>Poison</p>
+                                    </div>
+                                    <!-- <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/types/generation-ix/scarlet-violet/12.png" alt="icono_grass"/>
+                                    <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/types/generation-ix/scarlet-violet/4.png" alt="icono_poison"/>                                 -->
                                 </div>
                                 <div class="peso_altura">
                                     <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxZW0iIGhlaWdodD0iMWVtIiB2aWV3Qm94PSIwIDAgMjQgMjQiPgoJPHBhdGggZD0iTTAgMGgyNHYyNEgweiIgZmlsbD0ibm9uZSIgLz4KCTxnIGZpbGw9Im5vbmUiPgoJCTxwYXRoIGZpbGw9ImN1cnJlbnRDb2xvciIgZmlsbC1ydWxlPSJldmVub2RkIiBkPSJNMTUuNTggMi40MmMyLjgzIDAgNC4yNSAwIDUuMTIuODhjLjg4Ljg3Ljg4IDIuMjkuODggNS4xMnY3LjE2YzAgMi44MyAwIDQuMjUtLjg4IDUuMTJjLS44Ny44OC0yLjI5Ljg4LTUuMTIuODhIOC40MmMtMi44MyAwLTQuMjUgMC01LjEyLS44OGMtLjg4LS44Ny0uODgtMi4yOS0uODgtNS4xMlY4LjQyYzAtMi44MyAwLTQuMjUuODgtNS4xMmMuODctLjg4IDIuMjktLjg4IDUuMTItLjg4em0yLjU4IDQuM0wxNiAxMi4yNWwtMy45Ni0uN2wtNC4wNC43bC0yLjI0LTUuNTNsNi4yOC0xLjI0eiIgY2xpcC1ydWxlPSJldmVub2RkIiBvcGFjaXR5PSIuMiIgLz4KCQk8cmVjdCB3aWR0aD0iMTkuMTciIGhlaWdodD0iMTkuMTciIHN0cm9rZT0iY3VycmVudENvbG9yIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiIHN0cm9rZS13aWR0aD0iMS41IiByeD0iMyIgdHJhbnNmb3JtPSJyb3RhdGUoOTAgMCAyMS41OClzY2FsZSgtMSAxKSIgLz4KCQk8cGF0aCBzdHJva2U9ImN1cnJlbnRDb2xvciIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbGluZWpvaW49InJvdW5kIiBzdHJva2Utd2lkdGg9IjEuNSIgZD0iTTE0LjUzIDExLjljLjYzLjE2Ljk1LjI1IDEuMS4xOGMuMTctLjA3LjMtLjMuNTUtLjc4bDEuNC0yLjU3Yy4zOC0uNzIuNTctMS4wNy40Mi0xLjVzLS40OC0uNTUtMS4xMy0uODFBMTMgMTMgMCAwIDAgMTIgNS41NGMtMi4xNSAwLTMuNzguNDUtNC44Ni44OGMtLjY2LjI2LS45OS40LTEuMTQuODFjLS4xNS40My4wNS43OC40NCAxLjVsMS40IDIuNTdjLjI1LjQ3LjM4LjcuNTQuNzhjLjE2LjA2LjQ4LS4wMiAxLjEyLS4yYTEwIDEwIDAgMCAxIDIuNS0uMjhjMS4xMyAwIDEuOTYuMTQgMi41My4zbS45MyA1Ljk0SDguNTRtMi44My02LjI1bC0uNDItMy4xIiAvPgoJPC9nPgo8L3N2Zz4K" alt="icono_weight"/>
@@ -232,13 +253,16 @@
                                 <h2>Charmander</h2>
                                 <p>#004</p>
                             </div>
-                            <div class="imagen_pokemon">
-                                <img src="https://images.wikidexcdn.net/mwuploads/wikidex/thumb/5/56/latest/20200307023245/Charmander.png/300px-Charmander.png" alt="imagen_bulbasaur"/>
-                            </div>
+                            
+                            <img src="https://images.wikidexcdn.net/mwuploads/wikidex/thumb/5/56/latest/20200307023245/Charmander.png/300px-Charmander.png" class="imagen_pokemon" alt="imagen_bulbasaur"/>
                             
                             <section class="informacion">
                                 <div class="tipo">
-                                    <img src="https://static.wikia.nocookie.net/pokemon/images/4/47/Type_Fire_HOME.png/revision/latest/smart/width/250/height/250?cb=20220611140500" alt="icono_fire"/>
+                                    <div class="caja_de_fire">
+                                        <img src="https://cdn-icons-png.flaticon.com/512/8795/8795255.png" alt="logo fire"/>
+                                        <p>Fire</p>
+                                    </div>
+                                    <!-- <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/types/generation-ix/scarlet-violet/10.png" alt="icono_poison"/> -->
                                 </div>
                                 <div class="peso_altura">
                                     <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxZW0iIGhlaWdodD0iMWVtIiB2aWV3Qm94PSIwIDAgMjQgMjQiPgoJPHBhdGggZD0iTTAgMGgyNHYyNEgweiIgZmlsbD0ibm9uZSIgLz4KCTxnIGZpbGw9Im5vbmUiPgoJCTxwYXRoIGZpbGw9ImN1cnJlbnRDb2xvciIgZmlsbC1ydWxlPSJldmVub2RkIiBkPSJNMTUuNTggMi40MmMyLjgzIDAgNC4yNSAwIDUuMTIuODhjLjg4Ljg3Ljg4IDIuMjkuODggNS4xMnY3LjE2YzAgMi44MyAwIDQuMjUtLjg4IDUuMTJjLS44Ny44OC0yLjI5Ljg4LTUuMTIuODhIOC40MmMtMi44MyAwLTQuMjUgMC01LjEyLS44OGMtLjg4LS44Ny0uODgtMi4yOS0uODgtNS4xMlY4LjQyYzAtMi44MyAwLTQuMjUuODgtNS4xMmMuODctLjg4IDIuMjktLjg4IDUuMTItLjg4em0yLjU4IDQuM0wxNiAxMi4yNWwtMy45Ni0uN2wtNC4wNC43bC0yLjI0LTUuNTNsNi4yOC0xLjI0eiIgY2xpcC1ydWxlPSJldmVub2RkIiBvcGFjaXR5PSIuMiIgLz4KCQk8cmVjdCB3aWR0aD0iMTkuMTciIGhlaWdodD0iMTkuMTciIHN0cm9rZT0iY3VycmVudENvbG9yIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiIHN0cm9rZS13aWR0aD0iMS41IiByeD0iMyIgdHJhbnNmb3JtPSJyb3RhdGUoOTAgMCAyMS41OClzY2FsZSgtMSAxKSIgLz4KCQk8cGF0aCBzdHJva2U9ImN1cnJlbnRDb2xvciIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbGluZWpvaW49InJvdW5kIiBzdHJva2Utd2lkdGg9IjEuNSIgZD0iTTE0LjUzIDExLjljLjYzLjE2Ljk1LjI1IDEuMS4xOGMuMTctLjA3LjMtLjMuNTUtLjc4bDEuNC0yLjU3Yy4zOC0uNzIuNTctMS4wNy40Mi0xLjVzLS40OC0uNTUtMS4xMy0uODFBMTMgMTMgMCAwIDAgMTIgNS41NGMtMi4xNSAwLTMuNzguNDUtNC44Ni44OGMtLjY2LjI2LS45OS40LTEuMTQuODFjLS4xNS40My4wNS43OC40NCAxLjVsMS40IDIuNTdjLjI1LjQ3LjM4LjcuNTQuNzhjLjE2LjA2LjQ4LS4wMiAxLjEyLS4yYTEwIDEwIDAgMCAxIDIuNS0uMjhjMS4xMyAwIDEuOTYuMTQgMi41My4zbS45MyA1Ljk0SDguNTRtMi44My02LjI1bC0uNDItMy4xIiAvPgoJPC9nPgo8L3N2Zz4K" alt="icono_weight"/>
@@ -295,13 +319,16 @@
                                 <h2>Charmeleon</h2>
                                 <p>#005</p>
                             </div>
-                            <div class="imagen_pokemon">
-                                <img src="https://images.wikidexcdn.net/mwuploads/wikidex/thumb/f/fb/latest/20200411222755/Charmeleon.png/300px-Charmeleon.png" alt="imagen_bulbasaur"/>
-                            </div>
+                            
+                            <img src="https://images.wikidexcdn.net/mwuploads/wikidex/thumb/f/fb/latest/20200411222755/Charmeleon.png/300px-Charmeleon.png" class="imagen_pokemon" alt="imagen_bulbasaur"/>
                             
                             <section class="informacion">
                                 <div class="tipo">
-                                    <img src="https://static.wikia.nocookie.net/pokemon/images/4/47/Type_Fire_HOME.png/revision/latest/smart/width/250/height/250?cb=20220611140500" alt="icono_fire"/>
+                                    <div class="caja_de_fire">
+                                        <img src="https://cdn-icons-png.flaticon.com/512/8795/8795255.png" alt="logo fire"/>
+                                        <p>Fire</p>
+                                    </div>
+                                    <!-- <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/types/generation-ix/scarlet-violet/10.png" alt="icono_poison"/>                                 -->
                                 </div>
                                 <div class="peso_altura">
                                     <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxZW0iIGhlaWdodD0iMWVtIiB2aWV3Qm94PSIwIDAgMjQgMjQiPgoJPHBhdGggZD0iTTAgMGgyNHYyNEgweiIgZmlsbD0ibm9uZSIgLz4KCTxnIGZpbGw9Im5vbmUiPgoJCTxwYXRoIGZpbGw9ImN1cnJlbnRDb2xvciIgZmlsbC1ydWxlPSJldmVub2RkIiBkPSJNMTUuNTggMi40MmMyLjgzIDAgNC4yNSAwIDUuMTIuODhjLjg4Ljg3Ljg4IDIuMjkuODggNS4xMnY3LjE2YzAgMi44MyAwIDQuMjUtLjg4IDUuMTJjLS44Ny44OC0yLjI5Ljg4LTUuMTIuODhIOC40MmMtMi44MyAwLTQuMjUgMC01LjEyLS44OGMtLjg4LS44Ny0uODgtMi4yOS0uODgtNS4xMlY4LjQyYzAtMi44MyAwLTQuMjUuODgtNS4xMmMuODctLjg4IDIuMjktLjg4IDUuMTItLjg4em0yLjU4IDQuM0wxNiAxMi4yNWwtMy45Ni0uN2wtNC4wNC43bC0yLjI0LTUuNTNsNi4yOC0xLjI0eiIgY2xpcC1ydWxlPSJldmVub2RkIiBvcGFjaXR5PSIuMiIgLz4KCQk8cmVjdCB3aWR0aD0iMTkuMTciIGhlaWdodD0iMTkuMTciIHN0cm9rZT0iY3VycmVudENvbG9yIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiIHN0cm9rZS13aWR0aD0iMS41IiByeD0iMyIgdHJhbnNmb3JtPSJyb3RhdGUoOTAgMCAyMS41OClzY2FsZSgtMSAxKSIgLz4KCQk8cGF0aCBzdHJva2U9ImN1cnJlbnRDb2xvciIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbGluZWpvaW49InJvdW5kIiBzdHJva2Utd2lkdGg9IjEuNSIgZD0iTTE0LjUzIDExLjljLjYzLjE2Ljk1LjI1IDEuMS4xOGMuMTctLjA3LjMtLjMuNTUtLjc4bDEuNC0yLjU3Yy4zOC0uNzIuNTctMS4wNy40Mi0xLjVzLS40OC0uNTUtMS4xMy0uODFBMTMgMTMgMCAwIDAgMTIgNS41NGMtMi4xNSAwLTMuNzguNDUtNC44Ni44OGMtLjY2LjI2LS45OS40LTEuMTQuODFjLS4xNS40My4wNS43OC40NCAxLjVsMS40IDIuNTdjLjI1LjQ3LjM4LjcuNTQuNzhjLjE2LjA2LjQ4LS4wMiAxLjEyLS4yYTEwIDEwIDAgMCAxIDIuNS0uMjhjMS4xMyAwIDEuOTYuMTQgMi41My4zbS45MyA1Ljk0SDguNTRtMi44My02LjI1bC0uNDItMy4xIiAvPgoJPC9nPgo8L3N2Zz4K" alt="icono_weight"/>
@@ -358,14 +385,21 @@
                                 <h2>Charizard</h2>
                                 <p>#006</p>
                             </div>
-                            <div class="imagen_pokemon">
-                                <img src="https://images.wikidexcdn.net/mwuploads/wikidex/thumb/9/95/latest/20160817212623/Charizard.png/300px-Charizard.png" alt="imagen_bulbasaur"/>
-                            </div>
+
+                            <img src="https://images.wikidexcdn.net/mwuploads/wikidex/thumb/9/95/latest/20160817212623/Charizard.png/300px-Charizard.png" class="imagen_pokemon" alt="imagen_bulbasaur"/>
                             
                             <section class="informacion">
                                 <div class="tipo">
-                                    <img src="https://static.wikia.nocookie.net/pokemon/images/4/47/Type_Fire_HOME.png/revision/latest/smart/width/250/height/250?cb=20220611140500" alt="icono_fire"/>
-                                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTgFWjNJGr7kSfvXv3EQGOyaXm2Ts7oCpW-SYwx4IZSPO1IYZ-aTJwv2as&s=10" alt="icono_flying"/>
+                                    <div class="caja_de_fire">
+                                        <img src="https://cdn-icons-png.flaticon.com/512/8795/8795255.png" alt="logo fire"/>
+                                        <p>Fire</p>
+                                    </div>
+                                    <div class="caja_de_flying">
+                                        <img src="https://static.wikia.nocookie.net/pokemongo_es_gamepedia/images/d/d3/Icon_Volador.png/revision/latest/thumbnail/width/360/height/450?cb=20220331181207" alt="logo flying"/>
+                                        <p>Flying</p>
+                                    </div>
+                                    <!-- <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/types/generation-ix/scarlet-violet/10.png" alt="icono_poison"/>                                    
+                                    <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/types/generation-ix/scarlet-violet/3.png" alt="icono_poison"/> -->
                                 </div>
                                 <div class="peso_altura">
                                     <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxZW0iIGhlaWdodD0iMWVtIiB2aWV3Qm94PSIwIDAgMjQgMjQiPgoJPHBhdGggZD0iTTAgMGgyNHYyNEgweiIgZmlsbD0ibm9uZSIgLz4KCTxnIGZpbGw9Im5vbmUiPgoJCTxwYXRoIGZpbGw9ImN1cnJlbnRDb2xvciIgZmlsbC1ydWxlPSJldmVub2RkIiBkPSJNMTUuNTggMi40MmMyLjgzIDAgNC4yNSAwIDUuMTIuODhjLjg4Ljg3Ljg4IDIuMjkuODggNS4xMnY3LjE2YzAgMi44MyAwIDQuMjUtLjg4IDUuMTJjLS44Ny44OC0yLjI5Ljg4LTUuMTIuODhIOC40MmMtMi44MyAwLTQuMjUgMC01LjEyLS44OGMtLjg4LS44Ny0uODgtMi4yOS0uODgtNS4xMlY4LjQyYzAtMi44MyAwLTQuMjUuODgtNS4xMmMuODctLjg4IDIuMjktLjg4IDUuMTItLjg4em0yLjU4IDQuM0wxNiAxMi4yNWwtMy45Ni0uN2wtNC4wNC43bC0yLjI0LTUuNTNsNi4yOC0xLjI0eiIgY2xpcC1ydWxlPSJldmVub2RkIiBvcGFjaXR5PSIuMiIgLz4KCQk8cmVjdCB3aWR0aD0iMTkuMTciIGhlaWdodD0iMTkuMTciIHN0cm9rZT0iY3VycmVudENvbG9yIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiIHN0cm9rZS13aWR0aD0iMS41IiByeD0iMyIgdHJhbnNmb3JtPSJyb3RhdGUoOTAgMCAyMS41OClzY2FsZSgtMSAxKSIgLz4KCQk8cGF0aCBzdHJva2U9ImN1cnJlbnRDb2xvciIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbGluZWpvaW49InJvdW5kIiBzdHJva2Utd2lkdGg9IjEuNSIgZD0iTTE0LjUzIDExLjljLjYzLjE2Ljk1LjI1IDEuMS4xOGMuMTctLjA3LjMtLjMuNTUtLjc4bDEuNC0yLjU3Yy4zOC0uNzIuNTctMS4wNy40Mi0xLjVzLS40OC0uNTUtMS4xMy0uODFBMTMgMTMgMCAwIDAgMTIgNS41NGMtMi4xNSAwLTMuNzguNDUtNC44Ni44OGMtLjY2LjI2LS45OS40LTEuMTQuODFjLS4xNS40My4wNS43OC40NCAxLjVsMS40IDIuNTdjLjI1LjQ3LjM4LjcuNTQuNzhjLjE2LjA2LjQ4LS4wMiAxLjEyLS4yYTEwIDEwIDAgMCAxIDIuNS0uMjhjMS4xMyAwIDEuOTYuMTQgMi41My4zbS45MyA1Ljk0SDguNTRtMi44My02LjI1bC0uNDItMy4xIiAvPgoJPC9nPgo8L3N2Zz4K" alt="icono_weight"/>
