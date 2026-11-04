@@ -25,12 +25,14 @@
 
             <div class="container">
                 <div class="row justify-content-center">
-                    <div class="buscador col-lg-6">
-                        <a href="pagina_pokedex.html">
-                            <img src="https://cdn-icons-png.flaticon.com/256/107/107122.png" alt="icono_buscar" class="icono_lupa"/>
-                        </a>
-                        <input type="text" placeholder="Search a Pokémon..."/>
-                    </div>
+                    
+                    <form class="buscador col-lg-6" action="pagina_pokedex.html" method="get"> 
+                        <input type="search" name="pokemon" placeholder="Search a Pokémon..." aria-label="Buscar Pokémon" />
+                        <button type="submit">
+                            <img src="https://cdn-icons-png.flaticon.com/256/107/107122.png" alt="buscar" />
+                        </button>
+                    </form>
+
                 </div>
             
                 <section class="main_main row g-4">
